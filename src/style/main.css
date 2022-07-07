@@ -1,0 +1,167 @@
+body{
+    background-color: rgb(37, 31, 31);
+}
+.container1{
+    position: absolute;
+    width: 99%;
+    height: 100vh;
+    text-align: center;
+}
+
+.container1 .animate{
+    position: relative;
+    width: 30%;
+    height: 55vh;
+    background-color: wheat;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 black;
+    animation: animatezoom 1s linear;
+    -webkit-animation: animatezoom 1s linear;
+}
+
+.animate #close{
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    background-color: green;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+.animate #close2{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    background-color: red;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+.close{
+    margin: 2%;
+    background-color: rgb(5,5,66);
+    border-radius: 4px;
+    width: 200px;
+    height: 35px;
+    color: white;
+    border: none;
+}
+.closex {
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+  }
+.animate form{
+    margin-top: 5%;
+}
+.animate h1{
+    text-align: center;
+    color: orange;
+}
+.animate input{
+    width: 90%;
+    height: 25px;
+    text-align: center;
+    margin: 0px 20px 5px 5px;
+    background-color: wheat;
+    padding: 1px 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.animate .form-group{
+    width: 95%;
+    margin: 3%;
+    padding: 1px 5px;
+    border: none;
+}
+
+@keyframes animatezoom {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes animatezoom{
+    from{
+        -webkit-transform: scale(0);
+    }
+    to{
+        -webkit-transform: scale(1);
+    }
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    width: 100%;
+    margin: 1%;
+}
+
+.card .TODO{
+    padding: 2%;
+    background-color: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: white;
+}
+.card .DOING{
+    padding: 2%;
+    background-color: orange;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: white;
+}
+.card .DONE{
+    padding: 2%;
+    background-color: red;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: white;
+}
+.content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 3%;
+    border-radius: 4px;
+}
+
+.content h2{
+    padding: 1%;
+    background-color: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: white;
+    font-size: 17px;
+}
+#customer-select select{
+    width: 100%;
+    height: 35px;
+    color: white;
+    margin: 3% 0%;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+}
+#customer-select select option{
+    color: white;
+    height: 35px;
+    margin: 3% 0%;
+}
